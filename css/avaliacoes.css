@@ -1,0 +1,46 @@
+.avaliacoes {
+  background: #00399e;
+  height: max-content;
+  padding-bottom: 120px;
+}
+
+.avaliacoes-bg h1 {
+  color: #fffefe;
+  padding: 80px 80px;
+  text-align: center;
+}
+
+.depoimentos ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-bottom: 120px;
+}
+
+.avaliacao {
+  padding: 40px 40px;
+  background: #0c182f;
+  text-align: center;
+  width: max-content;
+  border-radius: 0.2rem;
+}
+.avaliacao p {
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+  font-family: "Poppins";
+  color: #f8f8f8;
+}
+
+.avaliacao a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  color: #c01d1c;
+  background: #fffefe;
+  padding: 8px 8px;
+  border-radius: 0.2rem;
+}
+
+.avaliacao a:hover {
+  background: #c01d1c;
+  color: #fffefe;
+}

@@ -1,0 +1,9 @@
+.introducao {
+  background-image: url(../imagens/bg-intro.png);
+}
+.introducao img {
+  display: flex;
+  justify-content: center;
+  margin-left: 150px;
+  margin-right: 150px;
+}

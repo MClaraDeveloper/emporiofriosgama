@@ -1,0 +1,82 @@
+.contatos {
+  background-color: #07255b;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.contato-bg {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+
+.contato-bg .logo {
+  grid-column: 1/1;
+  padding-bottom: 120px;
+}
+
+.contato-bg .direitos {
+  color: #7a7a7a;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.endereco {
+  max-width: 45ch;
+  padding-right: 80px;
+  color: #fffefe;
+  padding-bottom: 32px;
+  position: relative;
+}
+.endereco::before {
+  content: url("../icones/local.svg");
+  position: absolute;
+  left: -25px;
+  top: 20px;
+}
+
+.horario {
+  max-width: 45ch;
+  padding-right: 80px;
+  color: #fffefe;
+  padding-bottom: 32px;
+  position: relative;
+}
+.horario::before {
+  content: url("../icones/horario.svg");
+  position: absolute;
+  left: -25px;
+  top: -1px;
+}
+
+.horario p {
+  margin-bottom: 12px;
+}
+
+.telefone {
+  max-width: 45ch;
+  padding-right: 80px;
+  color: #fffefe;
+  padding-bottom: 32px;
+  position: relative;
+}
+.telefone::before {
+  content: url("../icones/telefone.svg");
+  position: absolute;
+  left: -25px;
+  top: -1px;
+}
+.redes ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.FormasDePagamento ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.FormasDePagamento h2 {
+  padding-bottom: 20px;
+}

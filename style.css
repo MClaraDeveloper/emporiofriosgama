@@ -1,0 +1,15 @@
+@import "./css/global.css";
+
+/*menu*/
+@import "./css/menu.css";
+
+/*introducao*/
+@import "./css/introducao.css";
+
+@import "./css/ofertas.css";
+@import "./css/receitas.css";
+@import "./css/avaliacoes.css";
+@import "./css/fornecedores.css";
+/*footer*/
+
+@import "./css/footer.css";

@@ -1,0 +1,11 @@
+.nossasofertas-bg {
+  background: #ffdd29;
+  height: 840px;
+}
+
+.ofertas ul {
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  gap: 32px;
+}

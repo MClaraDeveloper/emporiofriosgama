@@ -1,0 +1,66 @@
+.menu {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.menu1 {
+  grid-area: 1/1;
+  height: 40px;
+  background-color: #0a1f45;
+}
+.menu1 ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  padding: 8px 8px;
+}
+.menu1 li:first-child {
+  margin-right: 120px;
+}
+.menu1 li {
+  margin-right: 8px;
+}
+.menu-2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100px;
+  background-color: #0041b7;
+}
+.menu-2 img {
+  margin-left: 120px;
+  margin-right: 550px;
+}
+
+.menu-2 ul {
+  display: flex;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  color: #e1e1e1;
+  gap: 32px;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: "Poppins";
+}
+
+.menu-2 a {
+  position: relative;
+}
+
+.menu-2 a::before {
+  content: "";
+  height: 8px;
+  width: 16px;
+  background-color: #d01513;
+  position: absolute;
+  left: -20px;
+  top: 10px;
+}
+
+.menu-2 a:hover::before {
+  background-color: #ff0003;
+  height: 12px;
+  top: 8px;
+}
+
+@media (max-width: 800px);

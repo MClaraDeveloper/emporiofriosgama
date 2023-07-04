@@ -1,0 +1,104 @@
+.receitas-bg {
+  background: #0a1f45;
+}
+.receitas {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  margin-left: 120px;
+}
+.receitas img {
+  margin-right: 0px;
+}
+
+.receitas h1 {
+  color: #b0b0b0;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-right: 80px;
+}
+
+.ingredientes-bg {
+  background: #0c182f;
+  border-radius: 4px;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.ingredientes-bg::after {
+  content: url(../icones/seta\ ingredientes.svg);
+  position: absolute;
+  right: 20px;
+  top: 240px;
+  cursor: pointer;
+}
+
+.ingredientes-bg::hover::after {
+  color: #ff0003;
+}
+
+.ingredientes-bg h2 {
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  position: relative;
+}
+.ingredientes-bg .titulo-ingre::before {
+  content: "";
+  height: 32px;
+  width: 10px;
+  background: #ff0003;
+  position: absolute;
+  left: -4px;
+  top: 60px;
+}
+
+.titulo-ingre {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  line-height: 42px;
+  max-width: 75ch;
+  color: #ffff;
+  grid-column: 1/-1;
+}
+
+.ingredientes {
+  background: #c2c2c2;
+  height: max-content;
+  width: max-content;
+  margin-top: 80px;
+  margin-left: 80px;
+  padding-bottom: 20px;
+  border-radius: 4px;
+}
+.ingredientes h2 {
+  background: #00399e;
+  color: #e1e1e1;
+  font-family: "Poppins";
+  font-size: 32px;
+  line-height: 42px;
+  margin-bottom: 20px;
+  padding: 12px 12px;
+  border-radius: 4px 4px 0px 0px;
+}
+
+.ingredientes p {
+  color: #07255b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  position: relative;
+  padding-left: 20px;
+}
+.ingredientes p::before {
+  content: "";
+  height: 4px;
+  width: 10px;
+  background: #ff0003;
+  position: absolute;
+  left: 4px;
+  top: 8px;
+}
+
+.ingredientes-bg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
