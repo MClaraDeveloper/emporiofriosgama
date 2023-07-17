@@ -1,6 +1,6 @@
 .nossasofertas-bg {
   background: #ffdd29;
-  height: 840px;
+  height: min-content;
 }
 
 .ofertas ul {
