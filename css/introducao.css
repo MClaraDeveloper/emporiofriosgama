@@ -4,6 +4,5 @@
 .introducao img {
   display: flex;
   justify-content: center;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin: auto;
 }
