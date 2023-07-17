@@ -15,7 +15,7 @@
   padding: 8px 8px;
 }
 .menu1 li:first-child {
-  margin-right: 120px;
+  padding-right: 120px;
 }
 .menu1 li {
   margin-right: 8px;
@@ -23,18 +23,19 @@
 .menu-2 {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  height: 100px;
+  justify-content: space-between;
+  height: auto;
   background-color: #0041b7;
 }
 .menu-2 img {
-  margin-left: 120px;
-  margin-right: 550px;
+  margin-left: auto;
 }
 
 .menu-2 ul {
   display: flex;
   box-sizing: border-box;
+  align-self: center;
+  padding-right: 120px;
   flex-wrap: wrap;
   color: #e1e1e1;
   gap: 32px;
@@ -63,4 +64,25 @@
   top: 8px;
 }
 
-@media (max-width: 800px);
+@media (max-width: 850px) {
+  .menu-2 ul {
+    padding-right: 10px;
+    gap: 24px;
+    font-size: 16px;
+  }
+  .menu1 li:first-child {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu-2 img {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .menu-2 img {
+    display: none;
+  }
+}
