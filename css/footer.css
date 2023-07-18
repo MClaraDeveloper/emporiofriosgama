@@ -7,6 +7,7 @@
 .contato-bg {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
+  padding-bottom: 200px;
 }
 
 .contato-bg .logo {
@@ -14,10 +15,12 @@
   padding-bottom: 120px;
 }
 
-.contato-bg .direitos {
+.direitos {
   color: #7a7a7a;
+  padding-left: 40px;
   font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
 }
 
 .endereco {
@@ -79,4 +82,13 @@
 
 .FormasDePagamento h2 {
   padding-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .contato-bg .logo {
+    display: none;
+  }
+  .contato-bg {
+    grid-template-columns: 1fr 4fr 4fr;
+  }
 }
