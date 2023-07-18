@@ -21,7 +21,7 @@
   padding: 40px 40px;
   background: #0c182f;
   text-align: center;
-  width: max-content;
+  width: fit-content;
   border-radius: 0.2rem;
 }
 .avaliacao p {
@@ -43,4 +43,16 @@
 .avaliacao a:hover {
   background: #c01d1c;
   color: #fffefe;
+}
+
+@media (max-width: 800px) {
+  .avaliacoes-bg h1 {
+    font-size: 60px;
+    padding-bottom: 40px;
+  }
+  .depoimentos ul {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin: 60px 60px;
+  }
 }
