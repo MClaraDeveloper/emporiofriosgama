@@ -86,3 +86,17 @@
     display: none;
   }
 }
+
+@media (max-width: 500px) {
+  .menu-2 ul {
+    padding-right: 8px;
+    gap: 16px;
+    font-size: 14px;
+  }
+  .menu-2 a::before {
+    height: 8px;
+    width: 8px;
+    left: -10px;
+    top: 5px;
+  }
+}
