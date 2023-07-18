@@ -63,34 +63,34 @@
 
 .ingredientes {
   background: #c2c2c2;
-  height: max-content;
+  height: fit-content;
   width: max-content;
-  margin-top: 80px;
-  margin-left: 80px;
-  padding-bottom: 20px;
+  margin: auto;
+  padding-bottom: 40px;
   border-radius: 4px;
 }
 .ingredientes h2 {
   background: #00399e;
   color: #e1e1e1;
   font-family: "Poppins";
+  width: auto;
   font-size: 32px;
   line-height: 42px;
   margin-bottom: 20px;
-  padding: 12px 12px;
+  padding: 40px 40px;
   border-radius: 4px 4px 0px 0px;
 }
 
 .ingredientes p {
   color: #07255b;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 24px;
   position: relative;
   padding-left: 20px;
 }
 .ingredientes p::before {
   content: "";
-  height: 4px;
+  height: 8px;
   width: 10px;
   background: #ff0003;
   position: absolute;
@@ -101,4 +101,39 @@
 .ingredientes-bg {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 900px) {
+  .receitas h1 {
+    font-size: 60px;
+    line-height: 64px;
+  }
+  .titulo-ingre {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .ingredientes {
+    margin-top: 40px;
+    margin-left: -12px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+  .ingredientes h2 {
+    font-size: 24px;
+    padding: 4px 4px;
+    margin-bottom: 12px;
+  }
+  .ingredientes p {
+    padding-left: 16px;
+    font-size: 14px;
+  }
+  .ingredientes-bg::after {
+    right: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ingredientes-bg::after {
+    display: none;
+  }
 }
