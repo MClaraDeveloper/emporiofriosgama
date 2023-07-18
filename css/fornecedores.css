@@ -16,3 +16,12 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 800px) {
+  .fornecedores-bg h1 {
+    font-size: 60px;
+  }
+  .fornecedores-lista {
+    gap: 60px;
+  }
+}
