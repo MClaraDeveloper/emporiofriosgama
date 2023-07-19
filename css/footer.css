@@ -81,7 +81,7 @@
 }
 
 .FormasDePagamento h2 {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 @media (max-width: 800px) {
@@ -90,5 +90,19 @@
   }
   .contato-bg {
     grid-template-columns: 1fr 4fr 4fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .contato-bg {
+    grid-template-columns: 1fr;
+    padding-left: 80px;
+    padding-bottom: 120px;
+  }
+  .contato {
+    margin-bottom: 80px;
+  }
+  .FormasDePagamento ul {
+    gap: 20px;
   }
 }

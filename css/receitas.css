@@ -145,4 +145,8 @@
   .receitas .pizza {
     display: none;
   }
+  .receitas h1 {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
 }
