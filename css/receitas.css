@@ -136,4 +136,13 @@
   .ingredientes-bg::after {
     display: none;
   }
+  .receitas {
+    grid-template-columns: 1fr;
+    margin-left: 12px;
+    margin-right: 12px;
+    justify-content: center;
+  }
+  .receitas .pizza {
+    display: none;
+  }
 }
