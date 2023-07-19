@@ -9,3 +9,13 @@
   padding-bottom: 120px;
   gap: 32px;
 }
+
+@media (max-width: 650px) {
+  .ofertas ul img {
+    width: auto;
+    height: 250px;
+  }
+  .ofertas ul {
+    gap: 12px;
+  }
+}

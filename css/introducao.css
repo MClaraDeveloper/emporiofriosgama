@@ -6,3 +6,12 @@
   justify-content: center;
   margin: auto;
 }
+
+@media (max-width: 650px) {
+  .introducao {
+    height: 600px;
+  }
+  .introducao img {
+    padding-top: 200px;
+  }
+}
