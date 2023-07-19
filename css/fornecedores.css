@@ -28,8 +28,8 @@
 
 @media (max-width: 650px) {
   .fornecedores-lista li {
-    gap: 10px;
-    width: 20%;
+    gap: 40px;
+    width: 25%;
   }
   .fornecedores-bg h1 {
     font-size: 50px;

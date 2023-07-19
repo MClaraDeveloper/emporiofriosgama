@@ -96,7 +96,7 @@
 @media (max-width: 600px) {
   .contato-bg {
     grid-template-columns: 1fr;
-    padding-left: 80px;
+    padding-left: 60px;
     padding-bottom: 120px;
   }
   .contato {
