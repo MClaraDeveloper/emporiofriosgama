@@ -89,7 +89,7 @@
 
 @media (max-width: 600px) {
   .menu-2 ul {
-    padding-right: 32px;
+    padding-right: 8px;
     gap: 16px;
     font-size: 14px;
   }
