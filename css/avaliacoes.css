@@ -47,7 +47,7 @@
 
 @media (max-width: 800px) {
   .avaliacoes-bg h1 {
-    font-size: 60px;
+    font-size: 50px;
     padding-bottom: 40px;
   }
   .depoimentos ul {
@@ -59,7 +59,7 @@
 
 @media (max-width: 600px) {
   .avaliacoes-bg h1 {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 54px;
     padding-bottom: 32px;
   }
