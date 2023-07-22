@@ -139,10 +139,11 @@
   }
   .img-mobile-ingre {
     display: block;
+    margin-top: 12px;
   }
   .nav-auto-ingre,
   .nav-manual-ingre {
-    margin-top: 26%;
+    margin-top: 30%;
     margin-left: -150px;
   }
 }
@@ -153,14 +154,19 @@
     line-height: 64px;
   }
   .titulo-ingre {
-    font-size: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 20px;
     line-height: 32px;
   }
 
   .ingredientes-bg {
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
+  }
+  .ingredientes-bg .titulo-ingre::before {
+    top: 20px;
   }
 }
 
