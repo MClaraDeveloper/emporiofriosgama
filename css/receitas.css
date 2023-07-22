@@ -11,9 +11,9 @@
 }
 
 .receitas h1 {
-  color: #b0b0b0;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  color: #f0f0f0;
+  padding-top: 120px;
+  padding-bottom: 120px;
   padding-right: 80px;
 }
 
@@ -24,24 +24,10 @@
   position: relative;
 }
 
-.ingredientes-bg::after {
-  content: url(../icones/seta\ ingredientes.svg);
-  position: absolute;
-  right: 20px;
-  top: 240px;
-  cursor: pointer;
-}
-
 .ingredientes-bg::hover::after {
   color: #ff0003;
 }
 
-.ingredientes-bg h2 {
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
-  position: relative;
-}
 .ingredientes-bg .titulo-ingre::before {
   content: "";
   height: 32px;
@@ -56,51 +42,109 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
   line-height: 42px;
+  text-align: center;
+  padding-top: 40px;
   max-width: 75ch;
-  color: #ffff;
+  color: #b0b0b0;
   grid-column: 1/-1;
-}
-
-.ingredientes {
-  background: #c2c2c2;
-  height: fit-content;
-  width: max-content;
-  margin: auto;
-  padding-bottom: 40px;
-  border-radius: 4px;
-}
-.ingredientes h2 {
-  background: #00399e;
-  color: #e1e1e1;
-  font-family: "Poppins";
-  width: auto;
-  font-size: 32px;
-  line-height: 42px;
-  margin-bottom: 20px;
-  padding: 40px 40px;
-  border-radius: 4px 4px 0px 0px;
-}
-
-.ingredientes p {
-  color: #07255b;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  position: relative;
-  padding-left: 20px;
-}
-.ingredientes p::before {
-  content: "";
-  height: 8px;
-  width: 10px;
-  background: #ff0003;
-  position: absolute;
-  left: 4px;
-  top: 8px;
 }
 
 .ingredientes-bg {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+/* Slide */
+
+.slider-ingre {
+  margin: 0px 50%;
+  width: 100%;
+  height: auto;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.slider-content-ingre {
+  width: 400%;
+  height: auto;
+  display: flex;
+}
+
+.slider-content-ingre input,
+.img-mobile-ingre {
+  display: none;
+}
+
+.slide-box-ingre {
+  width: 25%;
+  height: auto;
+  position: relative;
+  text-align: center;
+  transition: 1s;
+}
+
+.slide-box-ingre img {
+  width: 100%;
+}
+
+.nav-manual-ingre,
+.nav-auto-ingre {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  margin-top: 26%;
+  margin-left: -300px;
+  justify-content: center;
+}
+
+.nav-manual-ingre .manual-btn-ingre,
+.nav-auto-ingre div {
+  border: 2px solid #e40707;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.nav-manual-ingre .manual-btn-ingre:not(:last-child),
+.nav-auto-ingre div:not(:last-child) {
+  margin-right: 10px;
+}
+
+.nav-manual-ingre .manual-btn-ingre:hover {
+  background-color: #e40707;
+}
+
+#radio-ingre1:checked ~ .nav-auto-ingre .auto-btn-ingre1,
+#radio-ingre2:checked ~ .nav-auto-ingre .auto-btn-ingre2,
+#radio-ingre3:checked ~ .nav-auto-ingre .auto-btn-ingre3 {
+  background-color: #e40707;
+}
+
+#radio-ingre1:checked ~ .primeiro-ingre {
+  margin-left: 0%;
+}
+
+#radio-ingre2:checked ~ .primeiro-ingre {
+  margin-left: -25%;
+}
+
+#radio-ingre3:checked ~ .primeiro-ingre {
+  margin-left: -50%;
+}
+
+@media screen and (max-width: 900px) {
+  .img-desktop-ingre {
+    display: none;
+  }
+  .img-mobile-ingre {
+    display: block;
+  }
+  .nav-auto-ingre,
+  .nav-manual-ingre {
+    margin-top: 26%;
+    margin-left: -150px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -112,23 +156,11 @@
     font-size: 24px;
     line-height: 32px;
   }
-  .ingredientes {
-    margin-top: 40px;
-    margin-left: -12px;
-    padding-bottom: 12px;
-    margin-bottom: 20px;
-  }
-  .ingredientes h2 {
-    font-size: 24px;
-    padding: 4px 4px;
-    margin-bottom: 12px;
-  }
-  .ingredientes p {
-    padding-left: 16px;
-    font-size: 14px;
-  }
-  .ingredientes-bg::after {
-    right: 10px;
+
+  .ingredientes-bg {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
   }
 }
 
