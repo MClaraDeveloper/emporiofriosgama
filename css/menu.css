@@ -75,23 +75,10 @@
   }
 }
 
-@media (max-width: 700px) {
-  .menu-2 img {
-    display: none;
-  }
-}
-
-@media (max-width: 650px) {
-  .menu-2 img {
-    display: none;
-  }
-}
-
 @media (max-width: 600px) {
   .menu-2 ul {
     padding-right: 8px;
     gap: 16px;
-    font-size: 14px;
   }
   .menu-2 a::before {
     height: 8px;
