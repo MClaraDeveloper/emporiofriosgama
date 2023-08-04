@@ -33,3 +33,16 @@ function proximaImgIngre() {
 setInterval(() => {
   proximaImgIngre();
 }, 5000);
+
+/* menu hamburguer */
+
+let btnMobile = document.getElementById("btn-mobile");
+let navMenu = document.getElementById("nav");
+
+function toggleMenu(event) {
+  if (event.type === "touchstart") event.preventDefault;
+  navMenu.classList.toggle("active");
+}
+
+btnMobile.addEventListener("click", toggleMenu);
+btnMobile.addEventListener("touchstart", toggleMenu);

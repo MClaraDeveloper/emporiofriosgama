@@ -31,7 +31,7 @@
   margin-left: auto;
 }
 
-.menu-2 ul {
+#menu-lista {
   display: flex;
   box-sizing: border-box;
   align-self: center;
@@ -44,11 +44,11 @@
   font-family: "Poppins";
 }
 
-.menu-2 a {
+#menu-lista a {
   position: relative;
 }
 
-.menu-2 a::before {
+#menu-lista a::before {
   content: "";
   height: 8px;
   width: 16px;
@@ -58,15 +58,17 @@
   top: 10px;
 }
 
-.menu-2 a:hover::before {
+#menu-lista a:hover::before {
   background-color: #ff0003;
   height: 12px;
   top: 8px;
 }
-
+#btn-mobile {
+  display: none;
+}
 @media (max-width: 850px) {
-  .menu-2 ul {
-    padding-right: 10px;
+  #menu-lista {
+    padding-right: 24px;
     gap: 24px;
     font-size: 16px;
   }
@@ -76,14 +78,59 @@
 }
 
 @media (max-width: 600px) {
-  .menu-2 ul {
-    padding-right: 8px;
-    gap: 16px;
+  #btn-mobile {
+    display: block;
+    padding: 8px 8px;
+    margin: auto 24px;
   }
-  .menu-2 a::before {
-    height: 8px;
-    width: 8px;
-    left: -10px;
-    top: 8px;
+  #menu-lista {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    left: 40%;
+    z-index: 1000;
+    transition: 0.6s;
+  }
+
+  #nav.active #menu-lista {
+    display: block;
+  }
+  #btn-mobile {
+    display: flex;
+    font-size: 1rem;
+    border: none;
+    border-radius: 2px;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburguer {
+    display: block;
+    width: 20px;
+    border-top: 2px solid;
+    color: #e1e1e1;
+  }
+  #hamburguer::after,
+  #hamburguer::before {
+    content: "";
+    background: currentColor;
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
   }
 }
