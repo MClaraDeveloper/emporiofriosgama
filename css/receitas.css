@@ -1,5 +1,5 @@
 .receitas-bg {
-  background: #0a1f45;
+  background: #302c27;
 }
 .receitas {
   display: grid;
@@ -18,21 +18,21 @@
 }
 
 .ingredientes-bg {
-  background: #0c182f;
+  background: #100f0e;
   border-radius: 4px;
   margin-bottom: 80px;
   position: relative;
 }
 
 .ingredientes-bg::hover::after {
-  color: #ff0003;
+  color: #ff8704;
 }
 
 .ingredientes-bg .titulo-ingre::before {
   content: "";
   height: 32px;
   width: 10px;
-  background: #ff0003;
+  background: #ff8704;
   position: absolute;
   left: -4px;
   top: 60px;
@@ -99,7 +99,7 @@
 
 .nav-manual-ingre .manual-btn-ingre,
 .nav-auto-ingre div {
-  border: 2px solid #e40707;
+  border: 2px solid #ff8704;
   padding: 6px;
   border-radius: 50%;
   cursor: pointer;
@@ -112,13 +112,13 @@
 }
 
 .nav-manual-ingre .manual-btn-ingre:hover {
-  background-color: #e40707;
+  background-color: #ff8704;
 }
 
 #radio-ingre1:checked ~ .nav-auto-ingre .auto-btn-ingre1,
 #radio-ingre2:checked ~ .nav-auto-ingre .auto-btn-ingre2,
 #radio-ingre3:checked ~ .nav-auto-ingre .auto-btn-ingre3 {
-  background-color: #e40707;
+  background-color: #ff8704;
 }
 
 #radio-ingre1:checked ~ .primeiro-ingre {

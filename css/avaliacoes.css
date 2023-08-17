@@ -1,11 +1,11 @@
 .avaliacoes {
-  background: #00399e;
+  background: #9f713f;
   height: max-content;
   padding-bottom: 120px;
 }
 
 .avaliacoes-bg h1 {
-  color: #fffefe;
+  color: #100f0e;
   padding: 80px 80px;
   text-align: center;
 }
@@ -19,7 +19,7 @@
 
 .avaliacao {
   padding: 40px 40px;
-  background: #0c182f;
+  background: #5f4e3c;
   text-align: center;
   width: fit-content;
   border-radius: 0.2rem;

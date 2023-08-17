@@ -40,7 +40,7 @@
 
 .nav-manual .manual-btn,
 .nav-auto div {
-  border: 2px solid #e40707;
+  border: 2px solid #ff8704;
   padding: 8px;
   border-radius: 50%;
   cursor: pointer;
@@ -53,13 +53,13 @@
 }
 
 .nav-manual .manual-btn:hover {
-  background-color: #e40707;
+  background-color: #ff8704;
 }
 
 #radio1:checked ~ .nav-auto .auto-btn1,
 #radio2:checked ~ .nav-auto .auto-btn2,
 #radio3:checked ~ .nav-auto .auto-btn3 {
-  background-color: #e40707;
+  background-color: #ff8704;
 }
 
 #radio1:checked ~ .primeiro {
