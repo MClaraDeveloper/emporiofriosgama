@@ -36,11 +36,12 @@ setInterval(() => {
 
 /* menu hamburguer */
 
-let btnMobile = document.getElementById("btn-mobile");
-let navMenu = document.getElementById("nav");
+const btnMobile = document.getElementById("btn-mobile");
 
 function toggleMenu(event) {
-  if (event.type === "touchstart") event.preventDefault;
+  if (event.type === "touchstart") event.preventDefault();
+
+  const navMenu = document.getElementById("nav");
   navMenu.classList.toggle("active");
 }
 

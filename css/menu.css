@@ -86,7 +86,7 @@
   #menu-lista {
     display: none;
     position: absolute;
-    width: 100%;
+    width: 50%;
     top: 40px;
     left: 40%;
     z-index: 1000;
