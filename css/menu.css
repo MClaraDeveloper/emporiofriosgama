@@ -6,7 +6,7 @@
 .menu1 {
   grid-area: 1/1;
   height: 40px;
-  background-color: #0a1f45;
+  background-color: #302c27;
 }
 .menu1 ul {
   display: flex;
@@ -25,7 +25,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   height: auto;
-  background-color: #0041b7;
+  background-color: #100f0e;
 }
 .menu-2 img {
   margin-left: auto;
@@ -52,14 +52,14 @@
   content: "";
   height: 8px;
   width: 16px;
-  background-color: #d01513;
+  background-color: #f88b14;
   position: absolute;
   left: -20px;
   top: 10px;
 }
 
 #menu-lista a:hover::before {
-  background-color: #ff0003;
+  background-color: #ff8704;
   height: 12px;
   top: 8px;
 }
