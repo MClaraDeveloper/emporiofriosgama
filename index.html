@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,43 +33,40 @@
       </ul>
     </div>
   </nav>
-  <section class="slider">
-    <div class="slider-content">
-      <input type="radio" name="btn-radio" id="radio1">
-      <input type="radio" name="btn-radio" id="radio2">
-      <input type="radio" name="btn-radio" id="radio3">
 
-      <div class="slide-box primeiro">
-        <img class="img-desktop" src="imagens/slide1.png" alt="slide1">
-        <img class="img-mobile" src="imagens/slide1 mob.png" alt="slide1">
-      </div>
-
-      <div class="slide-box">
-        <img class="img-desktop" src="imagens/slide2.png" alt="slide2">
-        <img class="img-mobile" src="imagens/slide2 mob.png" alt="slide2">
-      </div>
-
-      <div class="slide-box">
-        <img class="img-desktop" src="imagens/slide3.png" alt="slide3">
-        <img class="img-mobile" src="imagens/slide3 mob.png" alt="slide3">
-      </div>
-
-      <div class="nav-auto">
-        <div class="auto-btn1">
+  <section class="wrapper">
+    <div class="slide-wrapper" data-slide="wrapper">
+      <button class="slide-nav-button slide-nav-previous fas fa-chevron-left" data-slide="nav-previous-button"></button>
+      <button class="slide-nav-button slide-nav-next fas fa-chevron-right" data-slide="nav-next-button"></button>
+      <div class="slide-list" data-slide="list">
+        <div class="slide-item" data-slide="item" data-index="0">
+          <div class="slide-content">
+            <img class="slide-image" src="./imagens/slide1.png" alt="slide1">
+          </div>
         </div>
-        <div class="auto-btn2">
+        <div class="slide-item" data-slide="item" data-index="1">
+          <div class="slide-content">
+            <img class="slide-image" src="./imagens/slide2.png" alt="slide2">
+          </div>
         </div>
-        <div class="auto-btn3">
+        <div class="slide-item" data-slide="item" data-index="2">
+          <div class="slide-content">
+            <img class="slide-image" src="./imagens/slide3.png" alt="slide3">
+          </div>
         </div>
       </div>
+      <div class="slide-controls" data-slide="controls-wrapper">
 
-      <div class="nav-manual">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
+
       </div>
+
     </div>
+    </div>
+    </div>
+
   </section>
+
+
   <section id="receitasemporio" class="receitas-bg">
     <div class="receitas">
       <h1 class="titulo">Melhores Receitas Para Sua Casa <span>.</span></h1>
@@ -189,6 +187,13 @@
 
 
   <script src="js/slide.js"></script>
+  <script>
+    initSlider({
+      autoPlay: false,
+      startAtindex: 0,
+      timeInterval: 2000
+    });
+  </script>
 
 
 </body>
