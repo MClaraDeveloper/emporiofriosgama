@@ -40,7 +40,7 @@ const state = {
   movement: 0,
   currentSlideIndex: 0,
   autoPlay: true,
-  timeInterval: 3000,
+  timeInterval: 0,
 };
 
 function translateSlide({ position }) {
@@ -238,7 +238,7 @@ function setListeners() {
   });
 }
 
-function initSlider(startAtIndex = 0, autoPlay = true, timeInterval = 2000) {
+function initSlider(startAtIndex = 0, autoPlay = true, timeInterval = 3000) {
   state.autoPlay = autoPlay;
   state.timeInterval = timeInterval;
   createControlButtons();
@@ -248,7 +248,7 @@ function initSlider(startAtIndex = 0, autoPlay = true, timeInterval = 2000) {
   setAutoPlay();
 }
 
-/* Ingredientes 
+/*Ingredientes */
 
 let radioIngre = document.querySelector(".manual-btn-ingre");
 let contIngre = 1;
@@ -266,7 +266,6 @@ function proximaImgIngre() {
 setInterval(() => {
   proximaImgIngre();
 }, 5000);
-*/
 
 /* menu hamburguer */
 

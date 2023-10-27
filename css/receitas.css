@@ -35,7 +35,7 @@
   background: #ff8704;
   position: absolute;
   left: -4px;
-  top: 60px;
+  top: 50px;
 }
 
 .titulo-ingre {
@@ -160,6 +160,10 @@
     line-height: 32px;
   }
 
+  .nav-auto-ingre,
+  .nav-manual-ingre {
+    margin-top: 40%;
+  }
   .ingredientes-bg {
     padding-left: 40px;
     padding-right: 40px;
@@ -170,7 +174,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .ingredientes-bg::after {
     display: none;
   }
@@ -197,7 +201,7 @@
 
   .nav-auto-ingre,
   .nav-manual-ingre {
-    margin-top: 45%;
+    margin-top: 50%;
   }
   .img-mobile-ingre {
     display: block;
