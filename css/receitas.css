@@ -209,3 +209,22 @@
     height: auto;
   }
 }
+
+@media (max-width: 700px) {
+  .nav-auto-ingre,
+  .nav-manual-ingre {
+    margin-left: -120px;
+    margin-top: 40%;
+  }
+  .receitas h1 {
+    display: none;
+  }
+  .ingredientes-bg {
+    background: #100f0e;
+    padding-bottom: 60px;
+    border-radius: 4px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    position: relative;
+  }
+}

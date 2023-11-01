@@ -72,3 +72,10 @@
     padding-bottom: 80px;
   }
 }
+
+@media (max-width: 600px) {
+  .avaliacoes-bg h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
