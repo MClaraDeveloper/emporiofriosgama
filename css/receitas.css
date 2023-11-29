@@ -11,16 +11,15 @@
 }
 
 .receitas h1 {
-  color: #f0f0f0;
-  padding-top: 120px;
-  padding-bottom: 120px;
-  padding-right: 80px;
+  color: #5f4e3c;
+  padding-top: 180px;
+  padding-bottom: 40px;
 }
 
 .ingredientes-bg {
   background: #100f0e;
   border-radius: 4px;
-  margin-bottom: 80px;
+  margin-bottom: 180px;
   position: relative;
 }
 
@@ -43,7 +42,7 @@
   font-size: 40px;
   line-height: 42px;
   text-align: center;
-  padding-top: 40px;
+  padding: 40px 40px;
   max-width: 75ch;
   color: #b0b0b0;
   grid-column: 1/-1;
@@ -52,8 +51,8 @@
 .ingredientes-bg {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-bottom: 80px;
 }
-
 /* Slide */
 
 .slider-ingre {
@@ -78,8 +77,8 @@
 .slide-box-ingre {
   width: 25%;
   height: auto;
-  position: relative;
   text-align: center;
+  position: relative;
   transition: 1s;
 }
 
@@ -93,7 +92,6 @@
   position: absolute;
   width: 100%;
   margin-top: 26%;
-  margin-left: -300px;
   justify-content: center;
 }
 
